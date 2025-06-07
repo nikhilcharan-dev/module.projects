@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="login-register-container">
+    <div class="brand-title-container">
+      <img src="./public/logo.png" alt="Background Logo" class="brand-logo" />
+      <h1 class="brand-title">Elite Coders</h1>
+    </div>
+
+    <div class="form-row">
+      <div class="form-card login-card">
+        <h2>Login</h2>
+        <p class="error-message" id="login-error"></p>
+        <form id="login-form" class="cred-form">
+          <label>
+            Username or Email
+            <input type="text" id="login-user" />
+          </label>
+          <label>
+            Password
+            <input type="password" id="login-password" />
+          </label>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div class="form-card register-card">
+        <h2>Register</h2>
+        <p class="error-message" id="register-error"></p>
+        <form id="register-form" class="cred-form">
+          <label>
+            Username
+            <input type="text" id="register-username" />
+          </label>
+          <label>
+            Email
+            <input type="email" id="register-email" />
+          </label>
+          <label>
+            Password
+            <input type="password" id="register-password" />
+          </label>
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
+
+      <div class="slider slider-register" id="slider">
+        <p id="slider-text">Every journey starts with a first step – take yours by signing up!</p>
+        <button id="toggle-slider">Sign up</button>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
