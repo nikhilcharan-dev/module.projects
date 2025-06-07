@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learn Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="burger-section">
+    <input type="checkbox" id="menu-toggle" />
+    <div class="burger-icon">
+      <img class="burger-img" src="../public/images/burger-bar.png" alt="menu">
+    </div>
+
+    <div class="burger-menu">
+      <div class="burger-icon">
+        <img class="burger-img" src="../public/images/close.png" alt="close">
+      </div>
+      <div class="user-burger-profile">
+        <img class="burger-profile" src="../public/images/default-boy.jpg" alt="user">
+        <h1 class="burger-title">Username</h1>
+      </div>
+      <ul class="burger-links">
+        <li>Home</li>
+        <li>
+          CodeLab
+          <ul class="burger-dropdown">
+            <li>Learn</li>
+            <li>Practice</li>
+          </ul>
+        </li>
+        <li>CodeBlooded</li>
+        <li>
+          CodeGlory
+          <ul class="burger-dropdown">
+            <li>Stats</li>
+            <li>Compete</li>
+          </ul>
+        </li>
+        <li>Social</li>
+      </ul>
+      <button class="logout-button">Logout</button>
+    </div>
+  </section>
+
+  <div class="cheatsheet-section">
+    <h2>Featured Cheatsheets</h2>
+    <div class="cheatsheet-cards">
+      <div class="cheatsheet-card">
+        <img src="../public/images/default.jpg" alt="Profile">
+        <h3>Graph Theory Cheatsheet</h3>
+        <p class="quote">"Graphs are everywhere. Master them here."</p>
+        <div class="cheatsheet-btns">
+          <button class="learn-me-button">Learn</button>
+          <button class="rec-button">Recommend</button>
+        </div>
+      </div>
+      <div class="cheatsheet-card">
+        <img src="../public/images/default.jpg" alt="Profile">
+        <h3>Dynamic Programming Cheatsheet</h3>
+        <p class="quote">"Master the art of breaking problems into subproblems."</p>
+        <div class="cheatsheet-btns">
+          <button class="learn-me-button">Learn</button>
+          <button class="rec-button">Recommend</button>
+        </div>
+      </div>
+      <div class="cheatsheet-card">
+        <img src="../public/images/default.jpg" alt="Profile">
+        <h3>Data Structures Cheatsheet</h3>
+        <p class="quote">"Lay the foundation with core structures."</p>
+        <div class="cheatsheet-btns">
+          <button class="learn-me-button">Learn</button>
+          <button class="rec-button">Recommend</button>
+        </div>
+      </div>
+    </div>
+    <button class="expand-button">Expand</button>
+  </div>
+
+  <div class="filter-section">
+    <h3>Filter Questions</h3>
+    <form>
+      <div class="filter-item">
+        <label>Topic</label>
+        <input
+          type="text"
+          name="topics"
+          placeholder="Enter Topics (comma separated)">
+      </div>
+      <div class="filter-btns">
+        <button type="submit" class="filter-btn">Apply Filters</button>
+        <button type="button" class="filter-btn">Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="tsection">
+    <h2>Topics</h2>
+    <ul>
+      <li>Recursion - Basics</li>
+      <li>Backtracking</li>
+      <li>Graphs - DFS, BFS</li>
+      <li>Dynamic Programming</li>
+    </ul>
+  </div>
+
+</body>
+</html>
