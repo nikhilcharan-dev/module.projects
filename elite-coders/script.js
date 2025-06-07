@@ -28,6 +28,7 @@ loginForm.addEventListener("submit", (e) => {
     loginError.textContent = "";
     setTimeout(() => {
         alert("Login successful (Simulated)");
+        window.location.href = "home";
     }, 1500);
 });
 
