@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="user-profile">
+    <nav>
+        <div class="Logo">
+            <a href="/home"><img id="Logo" src="../public/star.png" alt="logo" /></a>
+            <h1><a href="/home">Elite Coders</a></h1>
+        </div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li class="dropdown-parent">
+                <span>CodeLab</span>
+                <ul class="dropdown">
+                    <li><a href="/learn">Learn</a></li>
+                    <li><a href="/practice">Practice</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-parent">
+                <span>CodeGlory</span>
+                <ul class="dropdown">
+                    <li><a href="/stats">Stats</a></li>
+                    <li><a href="/compete">Compete</a></li>
+                </ul>
+            </li>
+            <li><a href="/social">Social</a></li>
+            <li><a href="/user/id=1"><img id="user" src="../public/default-other.jpg" alt="profile" /></a></li>
+        </ul>
+    </nav>
+
+    <div class="profile-layout">
+
+      <div class="profile-left">
+        <h2>USERNAME’S Profile</h2>
+
+        <div class="profile-photo">
+          <img class="profile-img" src="../public/default-boy.jpg" alt="Profile photo" />
+        </div>
+
+        <div class="profile-details">
+          <p><strong>Email:</strong> user@example.com</p>
+          <p><strong>Gender:</strong> Prefer not to say</p>
+          <p><strong>Date of Birth:</strong> 01/01/2000</p>
+          <p><strong>Preferred Language:</strong> English</p>
+          <p><strong>Bio:</strong> A short bio about the user goes here.</p>
+        </div>
+
+        <button class="edit-btn">
+          <img src="assets/edit.png" alt="Edit" />
+          Edit Profile
+        </button>
+      </div>
+
+      <div class="profile-right">
+
+        <div class="top-buttons">
+          <div class="left-btns">
+            <button class="frnds-btn">
+              <img src="assets/friend.png" alt="Friends" />
+              Manage Friends
+            </button>
+            <button class="mail-btn">
+              <img src="assets/gmail.png" alt="Mail" />
+            </button>
+          </div>
+
+          <button class="logout-btn">
+            <img src="assets/log-out.png" alt="Log out" />
+          </button>
+        </div>
+
+        <div class="friends-info-container">
+          <div class="friends-info-box">
+            <h4>Friends</h4>
+            <p class="friends-count">42</p>
+          </div>
+          <div class="friends-info-box">
+            <h4>Friend Requests</h4>
+            <p class="requests-count">3</p>
+          </div>
+        </div>
+
+        <div class="achievements">
+          <h2>Achievements</h2>
+          <p>Unlocks soon!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="recommendations">
+      <h3>Recommended Questions</h3>
+      <ul>
+        <li class="question-card">
+          <div class="sender-info">
+            <img class="sender-img" src="assets/profile-placeholder.jpg" alt="Sender" />
+            <p class="sender-username">Sender Name: <strong>Jane Doe</strong></p>
+            <button class="view-profile">view profile</button>
+          </div>
+
+          <div class="question-details">
+            <h4 class="question-name">Two Sum Problem</h4>
+            <p class="question-topic"><strong>Topic:</strong> Arrays, Hash Map</p>
+            <p class="question-difficulty"><strong>Difficulty:</strong> Easy</p>
+            <button class="solve-btn">Solve</button>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="recommendations">
+      <h3>Recommended Topics</h3>
+      <ul>
+        <li class="question-card">
+          <div class="sender-info">
+            <img class="sender-img" src="assets/profile-placeholder.jpg" alt="Sender" />
+            <p class="sender-username">Sender Name: <strong>John Smith</strong></p>
+            <button class="view-profile">view profile</button>
+          </div>
+
+          <div class="topic-details">
+            <h4 class="topic-name">Dynamic Programming</h4>
+            <div class="topic-links">
+              <img src="assets/youtube.png" alt="YouTube link" />
+              <img src="assets/gfg.png" alt="GeeksforGeeks link" />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
